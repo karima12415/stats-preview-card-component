@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+:root{
+    --main-background: hsl(233, 47%, 7%);
+    --card-background: hsl(244, 38%, 16%);
+    --accent: hsl(277, 64%, 61%);
+    --main-heading: hsl(0, 0%, 100%);
+    --main-paragraph: hsla(0, 0%, 100%, 0.75);
+    --stat-headings: hsla(0, 0%, 100%, 0.6);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: hsl(233, 47%, 7%);
+}
+.container{
+    font-size: 15px;
+    width: 90%;
+    height: 500px;
+    background-color: hsl(244, 38%, 16%);
+    margin: 60px auto;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media(max-width:767px){
+    .container{
+    flex-direction: column-reverse;
+    height: 95vh;
+    margin: 25px auto;
+    }
+}
+.container .text{
+   width: 48%;
+   padding-left: 50px;
+}
+@media(max-width:767px){
+    .container .text{
+        width: 90%;
+        height: 60%;
+        padding-left: revert;
+        text-align: center;
+
+    }
+}
+.container .text h1{
+ color: hsl(0, 0%, 100%);
+ padding-bottom: 30px;
+}
+.container .text h1 span{
+ color:  hsl(277, 64%, 61%);
+ 
+}
+.container .text p{
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+.container .text .boxs{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: stretch;
+  text-align: center;
+  padding-top: 60px;
+}
+@media(max-width:767px){
+    .container .text .boxs{
+        flex-direction:column;
+        padding-top: revert;
+    }
+}
+.container .text .boxs .box h2{
+   color:  hsl(0, 0%, 100%);
+   padding-bottom: 5px;
+}
+.container .image{
+    width: 48%; 
+    height: 100%;
+    background-image: url("./images/image-header-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 4px;
+    position: relative;
+}
+@media(max-width:767px){
+    .container .image{
+        width: 100%;
+        height: 35%;
+        background-image: url(./images/image-header-mobile.jpg);
+    }
+}
+.container .image::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: hsl(277deg 64% 61% / 43%);
+}
