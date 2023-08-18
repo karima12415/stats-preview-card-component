@@ -12,11 +12,11 @@ This is a great small challenge to help get you used to building to a design. Th
 
 ### view the optinal layout depending on their device's screen size
 
-![Getting started](./design/desktop-preview.jpg)
+![Getting started](./desktop-preview.jpg)
 
 # Frontend Mentor - Stats preview card component
 
-![Design preview for the Stats preview card component coding challenge](./design/desktop-preview.jpg)
+![Design preview for the Stats preview card component coding challenge](./desktop-preview.jpg)
 
 ## Welcome! 👋
 
