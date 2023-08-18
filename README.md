@@ -4,7 +4,7 @@
 
 # Demo:
 
-   https://github.com/karima12415/stats-preview-card-component.git
+   https://karima12415.github.io/stats-preview-card-component/
 
 ## features:
 
